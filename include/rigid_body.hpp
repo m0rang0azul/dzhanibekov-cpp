@@ -1,4 +1,4 @@
-#ifndef RIGID_BODY_HPP
+﻿#ifndef RIGID_BODY_HPP
 #define RIGID_BODY_HPP
 
 #include "math_utils.hpp"
@@ -13,7 +13,7 @@ enum class BodyShape {
 };
 
 struct Face {
-    std::vector<int> vertices;
+    std::vector<int> indices;
 };
 
 class RigidBody {
@@ -22,8 +22,8 @@ private:
     std::vector<glm::vec3> vertices;
     std::vector<Face> faces;
     
-    Vector3d I;  // Moment of inertia
-    Vector3d L_body;  // Angular momentum (body frame)
+    Vector3d I;
+    Vector3d L_body;
     Vector3d angular_velocity;
     double initial_energy;
     double L_magnitude;
@@ -38,7 +38,6 @@ private:
     glm::vec3 color;
     std::string draw_method;
     
-    // Geometry creation
     void createBorboleta();
     void createRaquete();
     void createBola();
@@ -46,10 +45,8 @@ private:
 public:
     RigidBody(BodyShape shape = BodyShape::BORBOLETA);
     
-    // Physics update
     void update(double dt, bool gravity_enabled = false, double gravity_accel = 9.81);
     
-    // Getters
     const std::vector<glm::vec3>& getVertices() const { return vertices; }
     const std::vector<Face>& getFaces() const { return faces; }
     const glm::vec3& getColor() const { return color; }
@@ -62,8 +59,7 @@ public:
     
     double getEnergy() const;
     double getAngularMomentumMagnitude() const;
-    Vector3d getAngularVelocity() const { return I.asDiagonal().inverse() * L_body; }
-    
+    Vector3d getAngularVelocity() const;
     BodyShape getShape() const { return shape; }
 };
 
