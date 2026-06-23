@@ -178,4 +178,4 @@ MIT License
 
 ## Author
 
-C++ port based on Python implementation
+C++ port based on Python implementation by Luana M. Souza
