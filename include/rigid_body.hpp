@@ -60,7 +60,9 @@ public:
     double getEnergy() const;
     double getAngularMomentumMagnitude() const;
     Vector3d getAngularVelocity() const;
+    Vector3d getLBody() const { return L_body; }
     BodyShape getShape() const { return shape; }
 };
 
 #endif
+

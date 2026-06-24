@@ -1,23 +1,14 @@
-# Build directory
+﻿# Backups de desenvolvimento
+*_backup*.cpp
+*_funcional.cpp
+*_modern.cpp
+
+# Build
 build/
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
 
-# Executable
-dzhanibekov
-
-# IDE
+# Arquivos do VS Code
 .vscode/
-.idea/
-*.swp
-*.swo
-*~
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Dependencies
-libs/
+# Windows
+*.exe
+*.dll

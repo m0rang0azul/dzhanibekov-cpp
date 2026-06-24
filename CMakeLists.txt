@@ -15,7 +15,7 @@ link_directories(
 )
 
 add_executable(dzhanibekov
-    src/main.cpp
+    src/main_original.cpp
     src/rigid_body.cpp
     src/renderer.cpp
     src/simulation.cpp
