@@ -1,6 +1,6 @@
 # Dzhanibekov Effect Simulation - C++
 
--Esta não é a versão final do código, a física do problema ainda está sendo trabalhada 🍓
+-This isn't the final version of the code, the physics of the problem is still being worked on 🍓
 
 -A physically accurate C++ implementation of the Dzhanibekov effect (tennis racket theorem) using modern OpenGL for real-time visualization.
 
