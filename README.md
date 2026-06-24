@@ -8,6 +8,8 @@
 
 The Dzhanibekov effect is a striking phenomenon in rotational dynamics where an asymmetric object (like a tennis racket) flips unpredictably when spun. This simulation demonstrates the conservation of angular momentum (L) and kinetic energy (E) in rigid body dynamics.
 
+Learn more about the Effect Dzhanibekov: <https://youtube.com/shorts/BU5HwNyE4mk?si=Ty5OSNGRInxP3SrD>
+
 ### Physics Features
 
 - **Symplectic Integration**: Uses splitting methods for energy-preserving numerical integration
@@ -169,10 +171,10 @@ Handles:
 | Math Operations | Vectorized | SIMD-accelerated |
 
 ## References
-
-- **Dzhanibekov Effect**: https://en.wikipedia.org/wiki/Tennis_racket_theorem
+- **The Twisting Tennis Racket**. Ashbaugh, M. S., Chicone, C. C., & Cushman, R. H. (1991). Journal of Dynamics and Differential Equations, 3(1), 67-85
 - **Rigid Body Dynamics**: Goldstein, Classical Mechanics
 - **Symplectic Integration**: Hairer et al., Geometric Numerical Integration
+- **Dzhanibekov Effect**: https://en.wikipedia.org/wiki/Tennis_racket_theorem
 
 ## License
 
